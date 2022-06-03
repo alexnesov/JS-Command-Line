@@ -1,0 +1,42 @@
+@import url(https://fonts.google.com/css?family=Inconsolata:400,700);
+
+#draggable {
+    background: #eee;
+    display: flex;
+    position: fixed;
+    left: 0;top: 0;
+    font: .875em/1.6 'Inconsolata', monospace;
+}
+
+.no-select{
+    user-select: none;
+}
+
+
+input[type="text"]{
+    max-width: 10em;
+    border: none;
+    font-family: inherit;
+    background: rgba(0, 0, 0, 0);
+    color: rgb(17, 255, 12);
+    padding: 0.5em;
+    max-width: none;
+}
+
+input[type="text"]:focus{
+    background: rgba(0, 0, 0, 0);
+    color: rgb(17, 255, 12);
+    outline: none;
+    max-width: none;
+}
+
+
+.card{
+    border-radius: 1em !important;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.263);
+}
+
+.scroll{
+    max-height: 24rem;
+    overflow-y: auto;
+}
