@@ -1,5 +1,7 @@
 # JS-Command-Line
 
+![This package is currently under development.](https://img.shields.io/badge/under-development-orange.svg)
+
 
 An elegant command-line-interface-like front-end element in plain JS, HTML, CSS to be plugged on any web app.
 It's main characteristics are it's draggability (across the screen) and simplicty.
