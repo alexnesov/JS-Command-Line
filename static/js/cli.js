@@ -33,6 +33,13 @@ draggable.addEventListener('mouseup', function() {
   document.body.classList.remove('no-select');
 })
 
+var today = new Date();
+var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+
+
+var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+var dateTime = date + ' ' + time;
+
 class Terminal{
     constructor() {
         this.activateEnter();
@@ -49,7 +56,7 @@ class Terminal{
                 console.log("Enter pressed");
 
                 var lineBreak = document.createElement("br");
-                terminal_content.append("user@gts-systems > " + input_terminal.value);
+                terminal_content.append(`[${dateTime}] user@gts-systems > ` + input_terminal.value);
                 terminal_content.appendChild(lineBreak);
             }
         });     
